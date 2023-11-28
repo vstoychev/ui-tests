@@ -8,10 +8,16 @@
 npm i
 ```
 
-### Run the UI tests
+### Run all tests
 
 ```bash
 npx playwright test
+```
+
+### Open the interactive UI to run the tests
+
+```bash
+npx playwright test --ui
 ```
 
 ### Run the tests in a specific file
@@ -40,10 +46,10 @@ Example for running the files that have landing or login in the file name:
 npx playwright test landing login
 ```
 
-### Run a test with given title
+### Run a test from the line number where the test is defined
 
 ```bash
-npx playwright test -g "Playwright home page has title that contains Playwright"
+npx playwright test example:3
 ```
 
 ### Running tests in headed mode
